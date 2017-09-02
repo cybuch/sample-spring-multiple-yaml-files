@@ -18,8 +18,8 @@ class YamlFileApplicationContextInitializer implements ApplicationContextInitial
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
         RESOURCE_LOCATIONS.forEach((key, value) ->
-                addYamlPropertiesToSpringEnvironment(applicationContext, key, value
-        ));
+                addYamlPropertiesToSpringEnvironment(applicationContext, key, value)
+        );
     }
 
     private void addYamlPropertiesToSpringEnvironment(

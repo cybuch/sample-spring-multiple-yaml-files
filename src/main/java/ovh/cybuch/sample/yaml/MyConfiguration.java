@@ -1,7 +1,7 @@
 package ovh.cybuch.sample.yaml;
 
-import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -18,9 +18,9 @@ class MyConfiguration {
         return new MyConfigurationProperties();
     }
 
-    @Data
-    @ConfigurationProperties(prefix = "myConfig")
     @Getter
+    @Setter
+    @ConfigurationProperties(prefix = "myConfig")
     static class MyConfigurationProperties {
         private String bar;
         private String foo;
