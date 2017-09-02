@@ -1,0 +1,4 @@
+myConfig:
+  foo: 'bar'
+
+context.initializer.classes: ovh.cybuch.sample.yaml.YamlFileApplicationContextInitializer
